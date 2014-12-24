@@ -1,0 +1,189 @@
+<div class="summary-tracker">
+    <div class="summary-tracker-container">
+        <div class="summary-tracker__title-block">
+            <h2 class="title-h2">Your Wireless Solution</h2>
+        </div>
+        <div class="summary-tracker__checkout">
+            <a href="#add-to-cart" class="button button--hero button--disabled">
+                <div class="button__content-container">
+                    <div class="button__main-content">Checkout</div>
+                    <div class="button__extra-content">
+                        <i class="icon-arrow-right"></i>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="summary-tracker__tabs">
+            <div class="summary-tracker__tab {{tracker_tab_device}}">
+                <div class="icon-smartphone"><div class="notification-badge--flow">{{tracker_badge_device}}</div></div>
+                <p class="summary-tracker-tab__title">Devices</p>
+                <p class="summary-tracker-tab__text">
+                    {{device_price}}<br />
+                </p>
+            </div>
+            <div class="summary-tracker__tab {{tracker_tab_rate}}">
+                <div class="icon-minutes"><div class="notification-badge--flow">{{tracker_badge_rate}}</div></div>
+                <p class="summary-tracker-tab__title">Rate Plans</p>
+                <p class="summary-tracker-tab__text">
+                    {{rate_price}}<br />
+                </p>
+            </div>
+            <div class="summary-tracker__tab {{tracker_tab_data}}">
+                <div class="icon-data"><div class="notification-badge--flow">{{tracker_badge_data}}</div></div>
+                <p class="summary-tracker-tab__title">Data Plans</p>
+                <p class="summary-tracker-tab__text">
+                    {{data_price}}<br />
+                </p>
+            </div>
+            <div class="summary-tracker__tab {{tracker_tab_addons}}">
+                <div class="icon-add-ons"><div class="notification-badge--flow">{{tracker_badge_addons}}</div></div>
+                <p class="summary-tracker-tab__title">Add-Ons</p>
+                <p class="summary-tracker-tab__text">
+                    {{addons_price}}<br />
+                </p>
+            </div>
+            <div class="summary-tracker__tab {{tracker_tab_accessories}}">
+                <div class="icon-accessories"><div class="notification-badge--flow">{{tracker_badge_accessories}}</div></div>
+                <p class="summary-tracker-tab__title">Accessories</p>
+                <p class="summary-tracker-tab__text">
+                    {{accessories_price}}<br />
+                </p>
+            </div>
+            <div class="summary-tracker__tab--summary">
+                <div class="summary-tracker__tab--summary-price">
+                    <div class="price">
+                        <p class="summary-tracker__tab--sumary-label">Monthly</p>
+                        {{{summary_monthly_price}}}
+                    </div>
+                    <div class="price">
+                        <p class="summary-tracker__tab--sumary-label">One Time</p>
+                        {{{summary_onetime_price}}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="summary-tracker__details">
+        <div class="summary-tracker__details-title"><h3 class="title-h3">Summary Review</h3></div>
+        <div class="summary-tracker__details-onetime"><p class="body-copy">One-Time</p></div>
+        <div class="summary-tracker__details-monthly"><p class="body-copy">Monthly</p></div>
+
+        <div class="summary-tracker__details-container">
+            <div class="summary-tracker__details-line">
+                <h4 class="title-h4">Line 1</h4>
+            </div>
+            <div class="summary-tracker__details-steps">
+                <div class="summary-tracker__details-steps-info">
+                    <p class="summary-tracker__details-steps-info-title">Device</p>
+                    <p class="summary-tracker__details-steps-info-text">
+                        {{{summary_device_details_info}}}
+                    </p>
+                </div>
+                <div class="summary-tracker__details-steps-onetime">
+                    <p class="body-copy">{{summary_device_details_onetime}}</p>
+                </div>
+                <div class="summary-tracker__details-steps-monthly">
+                    <p class="body-copy">{{summary_device_details_monthly}}</p>
+                </div>
+            </div>
+            <div class="summary-tracker__details-steps">
+                <div class="summary-tracker__details-steps-info">
+                    <p class="summary-tracker__details-steps-info-title">Voice Plan</p>
+                    <p class="summary-tracker__details-steps-info-text">
+                        {{{summary_voice_details_info}}}
+                    </p>
+                </div>
+                <div class="summary-tracker__details-steps-onetime">
+                    <p class="body-copy">{{summary_voice_details_onetime}}</p>
+                </div>
+                <div class="summary-tracker__details-steps-monthly">
+                    <p class="body-copy">{{summary_voice_details_monthly}}</p>
+                </div>
+            </div>
+            <div class="summary-tracker__details-steps">
+                <div class="summary-tracker__details-steps-info">
+                    <p class="summary-tracker__details-steps-info-title">Data Plan</p>
+                    <p class="summary-tracker__details-steps-info-text">
+                        {{{summary_data_details_info}}}
+                    </p>
+                </div>
+                <div class="summary-tracker__details-steps-onetime">
+                    <p class="body-copy">{{summary_data_details_onetime}}</p>
+                </div>
+                <div class="summary-tracker__details-steps-monthly">
+                    <p class="body-copy">{{summary_data_details_monthly}}</p>
+                </div>
+            </div>
+            <div class="summary-tracker__details-steps">
+                <div class="summary-tracker__details-steps-info">
+                    <p class="summary-tracker__details-steps-info-title">Add-Ons</p>
+                    <p class="summary-tracker__details-steps-info-text">
+                        {{{summary_addons_details_info}}}
+                    </p>
+                </div>
+                <div class="summary-tracker__details-steps-onetime">
+                    <p class="body-copy">{{summary_addons_details_onetime}}</p>
+                </div>
+                <div class="summary-tracker__details-steps-monthly">
+                    <p class="body-copy">{{summary_addons_details_monthly}}</p>
+                </div>
+            </div>
+            <div class="summary-tracker__details-steps">
+                <div class="summary-tracker__details-steps-info">
+                    <p class="summary-tracker__details-steps-info-title">Acccessories</p>
+                    <p class="summary-tracker__details-steps-info-text">
+                        {{{summary_accessories_details_info}}}
+                    </p>
+                </div>
+                <div class="summary-tracker__details-steps-onetime">
+                    <p class="body-copy">{{summary_accessories_details_onetime}}</p>
+                </div>
+                <div class="summary-tracker__details-steps-monthly">
+                    <p class="body-copy">{{summary_accessories_details_monthly}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="summary-tracker__details-container summary-tracker__details-container--total">
+            <div class="summary-tracker__details-line">
+                <h4 class="title-h4">Total</h4>
+            </div>
+            <div class="summary-tracker__details-steps">
+                <div class="summary-tracker__details-steps-info">
+                    <p class="summary-tracker__details-steps-info-title">Product &amp; Services</p>
+                </div>
+                <div class="summary-tracker__details-steps-onetime">
+                    <p class="body-copy"></p>
+                </div>
+                <div class="summary-tracker__details-steps-monthly">
+                    <p class="body-copy">{{summary_monthly_total}}</p>
+                </div>
+            </div>
+            <div class="summary-tracker__details-steps summary-tracker__details-savings">
+                <div class="summary-tracker__details-steps-info">
+                    <p class="summary-tracker__details-steps-info-title">Savings</p>
+                </div>
+                <div class="summary-tracker__details-steps-onetime">
+                    <p class="body-copy"></p>
+                </div>
+                <div class="summary-tracker__details-steps-monthly">
+                    <p class="body-copy"></p>
+                </div>
+            </div>
+            <div class="summary-tracker__details-steps">
+                <div class="summary-tracker__details-steps-info">
+                    <p class="summary-tracker__details-steps-info-title">SubTotal</p>
+                </div>
+                <div class="summary-tracker__details-steps-onetime">
+                    <p class="body-copy"></p>
+                </div>
+                <div class="summary-tracker__details-steps-monthly">
+                    <p class="body-copy"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-toggle">
+        <button class="section-toggle__button" data-skip-parent="true" data-collapsed-text="Show Details" data-expanded-text="Hide Details">Show Details <i class="icon-chevron-down"></i></button>
+    </div>
+</div>

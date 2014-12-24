@@ -1,0 +1,55 @@
+<!-- Sticky Summary is visible when you scroll -->
+<div class="sticky-summary">
+    <div class="sticky-summary__container">
+        <!-- Sticky Summary info Will show when the summary is not visible and the step tracker is visible -->
+        <div class="sticky-summary__info"><h3 class="sticky-summary__info-title">Your Wireless Solution</h3></div>
+        <!-- Sticky Summary Tracker Will show when the step tracker is not visible and is active -->
+        <div class="sticky-summary__tracker">
+            <div class="sticky-summary__tracker-line">
+                <p class="short-copy short-copy--small">Editing</p>
+                <p class="tracker-line">Line 1</p>
+            </div>
+            <!-- Container where we add the class's to mark the active step by adding active -->
+            <a href="#"><div class="sticky-summary__tracker-tabs {{sticky-device}}" data-tooltip data-style="dark" data-position="below" title="Device">
+                <i class="icon-smartphone"></i><p class="tracker-tab-text">Device</p>
+                <i class="icon-checkbox-checkmark"></i>
+            </div></a>
+            <a href="#"><div class="sticky-summary__tracker-tabs {{sticky-rate}}" data-tooltip data-style="dark" data-position="below" title="Rate Plan">
+                <i class="icon-minutes"></i><p class="tracker-tab-text">Rate Plan</p>
+                <i class="icon-checkbox-checkmark"></i>
+            </div></a>
+            <a href="#"><div class="sticky-summary__tracker-tabs {{sticky-data}}" data-tooltip data-style="dark" data-position="below" title="Data Plan">
+                <i class="icon-data"></i><p class="tracker-tab-text">Data Plan</p>
+                <i class="icon-checkbox-checkmark"></i>
+            </div></a>
+            <a href="#"><div class="sticky-summary__tracker-tabs {{sticky-addons}}" data-tooltip data-style="dark" data-position="below" title="Add-Ons">
+                <i class="icon-add-ons"></i><p class="tracker-tab-text">Add-Ons</p>
+                <i class="icon-checkbox-checkmark"></i>
+            </div></a>
+            <a href="#"><div class="sticky-summary__tracker-tabs {{sticky-accessories}}" data-tooltip data-style="dark" data-position="below" title="Accessories">
+                <i class="icon-accessories"></i><p class="tracker-tab-text">Accessories</p>
+                <i class="icon-checkbox-checkmark"></i>
+            </div></a>
+        </div>
+        <div class="sticky-summary__charges">
+            <div class="sticky-summary__charges-total">
+                <p class="sticky-summary__charges-label">Total Charges:</p>
+            </div>
+            <div class="sticky-summary__charges-onetime">
+                <div class="price">
+                    <p class="sticky-summary__charges-label">One Time</p>
+                    {{{summary_onetime_price}}}
+                </div>
+            </div>
+            <div class="sticky-summary__charges-monthly">
+                <div class="price">
+                    <p class="sticky-summary__charges-label">Monthly</p>
+                    {{{summary_monthly_price}}}
+                </div>
+            </div>
+            <div class="sticky-summary__charges-checkout">
+                <a href="#add-to-cart" class="button button--hero button--disabled"><div class="button__content-container"><div class="button__main-content">Checkout</div><div class="button__extra-content"><i class="icon-arrow-right"></i></div></div></a>
+            </div>
+        </div>
+    </div>
+</div>

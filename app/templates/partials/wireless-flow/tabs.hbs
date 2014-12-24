@@ -1,0 +1,138 @@
+<div class="flow-tabs">
+    <div class="flow-tabs__title-block">
+        <h2 class="title-h3">Primary Line</h2>
+    </div>
+    <!-- Actions Container -->
+    <div class="flow-tabs__actions">
+        <!-- Port Number Input Container that hides when the number is valid -->
+        <div class="port-number-container">
+
+            <div class="port-number__item">
+                <!-- Port Number Input Item where we add the Class port-number__item-input--expand to show the input -->
+                <div class="port-number__item-input">
+                    <i class="icon-port-number">&nbsp;</i>
+                    <input class="port-number__input" type="text" placeholder="___.___.____">
+                    <i class="icon-erase">&nbsp;</i>
+                    <img class="input-loading" src="resources/images/styles/input_loading.gif" alt="" />
+                </div>
+            </div>
+            <div class="port-number__item port-number__item--display">
+                <a class="port-number__item-button" data-tooltip data-style="dark" title="Transfer your Number from another provider. After you configure your new phone and plan, we will ask you for some additional information.">Keep My Number</a>
+                <a class="port-number__item-button-active">Keep My Number</a>
+            </div>
+            <div class="item-input__message">
+                Enter a valid ten-digit wireless number.
+            </div>
+
+
+        </div>
+        <!-- Port Number Valid Container that show when the number is valid -->
+        <div class="port-number-container__valid">
+            <i class="icon-tickets-referred">&nbsp;</i>
+            We'll transfer: <span class="valid-number">123.456.7890</span>
+            <a class="link port-number__valid-link" data-tooltip data-style="dark" title="Click to Cancel transfering the eligible number to a port-number__item-input--expandw device">Cancel</a>
+        </div>
+        <div class="button-group button-group--dropdown">
+                <button class="button button--icon button-icon--dropdown">
+                    <i class="icon-edit"></i>
+                </button>
+                <button class="button button--icon button--dropdown button-icon--dropdown button--ellipsis">
+                    <i class="icon-more-options"></i>
+                    <ul class="dropdown__menu">
+                        <li class="dropdown__menu-item dropdown__menu-item--disabled"><a href="#" class="dropdown__menu-link">Clear</a></li>
+                        <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link">Duplicate</a></li>
+                        <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link">Delete</a></li>
+                    </ul>
+                </button>
+            </div>
+    </div>
+    <!-- Step-Tracker Container -->
+    <div class="flow-tabs__steps">
+        <!-- Step-Tracker Steps where we put the Class active, completed, mobile-share, mobile-data, data -->
+        <div class="flow-tabs__steps-step {{step_device}}">
+            <!-- Step-Tracker Step Container where we have the content of the step when is active and empty -->
+            <div class="flow-tabs__steps-step-container">
+                <i class="icon-smartphone"></i>
+                <p class="flow-tabs__steps-step-title">Device <i class="icon-checkbox-checkmark"></i></p>
+                <p class="flow-tabs__steps-step-text">{{#if step_device_required}}{{{step_device_required}}}{{else}}(Required){{/if}}</p>
+            </div>
+            <!-- Step-Tracker Step Container Completed where we have the content of the step when is Completed -->
+            <div class="flow-tabs__steps-step--completed">
+                <!-- The Image is being resize to a height 90px so it fits the space -->
+                <img src="http:\/\/placehold.it\/70x90" alt="" />
+                <i class="icon-smartphone"></i>
+                <p class="flow-tabs__steps-step-title">Device <i class="icon-checkbox-checkmark"></i></p>
+                <p class="flow-tabs__steps-step-text">{{#if step_device_required}}{{{step_device_required}}}{{else}}(Required){{/if}}</p>
+            </div>
+        </div>
+        <div class="flow-tabs__steps-step {{step_rate}}">
+            <div class="flow-tabs__steps-step-container">
+                <i class="icon-minutes"></i>
+                <p class="flow-tabs__steps-step-title">Rate Plan <i class="icon-checkbox-checkmark"></i></p>
+                <p class="flow-tabs__steps-step-text">{{#if step_rate_required}}{{{step_rate_required}}}{{else}}(Required){{/if}}</p>
+            </div>
+            <div class="flow-tabs__steps-step--completed">
+                <i class="icon-minutes"></i>
+                <h3 class="title-h2">{{#if step_rate_product}}{{{step_rate_product}}}{{/if}}</h3>
+                <p class="flow-tabs__steps-step-title">Rate Plan <i class="icon-checkbox-checkmark"></i></p>
+                <p class="flow-tabs__steps-step-text">{{#if step_rate_required}}{{{step_rate_required}}}{{/if}}</p>
+                <i class="icon-link"></i>
+            </div>
+            <div class="flow-tabs__steps-step--disabled">
+                <div class="line-top"></div>
+                <i class="icon-minutes"></i>
+                <p class="flow-tabs__steps-step-title">Rate Plan<br />Not Applicable</p>
+                <div class="line-bottom"></div>
+            </div>
+        </div>
+        <div class="flow-tabs__steps-step {{step_data}}">
+            <div class="flow-tabs__steps-step-container">
+                <i class="icon-data"></i>
+                <p class="flow-tabs__steps-step-title">Data Plan <i class="icon-checkbox-checkmark"></i></p>
+                <p class="flow-tabs__steps-step-text">{{#if step_data_required}}{{{step_data_required}}}{{else}}(Required){{/if}}</p>
+            </div>
+            <div class="flow-tabs__steps-step--completed">
+                <i class="icon-data"></i>
+                <h3 class="title-h2">{{#if step_data_product}}{{{step_data_product}}}{{/if}}</h3>
+                <p class="flow-tabs__steps-step-title">Data Plan <i class="icon-checkbox-checkmark"></i></p>
+                <p class="flow-tabs__steps-step-text">{{#if step_data_required}}{{{step_data_required}}}{{/if}}</p>
+            </div>
+        </div>
+        <div class="flow-tabs__steps-step {{step_addons}}">
+            <div class="flow-tabs__steps-step-container">
+                <i class="icon-add-ons"></i>
+                <p class="flow-tabs__steps-step-title">Add-Ons <i class="icon-checkbox-checkmark"></i></p>
+                <p class="flow-tabs__steps-step-text">{{#if step_addons_required}}{{{step_addons_required}}}{{else}}(Optional){{/if}}</p>
+            </div>
+            <div class="flow-tabs__steps-step--completed">
+                <i class="icon-add-ons"></i>
+                <h3 class="title-h2">{{#if step_addons_product}}{{{step_addons_product}}}{{/if}}</h3>
+                <p class="flow-tabs__steps-step-title">Add-Ons <i class="icon-checkbox-checkmark"></i></p>
+                <p class="flow-tabs__steps-step-text">{{#if step_addons_required}}{{{step_addons_required}}}{{/if}}</p>
+            </div>
+        </div>
+        <div class="flow-tabs__steps-step {{step_accessories}}">
+            <div class="flow-tabs__steps-step-container">
+                <i class="icon-accessories"></i>
+                <p class="flow-tabs__steps-step-title">Accessories <i class="icon-checkbox-checkmark"></i></p>
+                <p class="flow-tabs__steps-step-text">{{#if step_accessories_required}}{{{step_accessories_required}}}{{else}}(Optional){{/if}}</p>
+            </div>
+            <div class="flow-tabs__steps-step--completed">
+                <i class="icon-accessories"></i>
+                <h3 class="title-h2">{{#if step_accessories_product}}{{{step_accessories_product}}}{{/if}}</h3>
+                <p class="flow-tabs__steps-step-title">Accessories <i class="icon-checkbox-checkmark"></i></p>
+                <p class="flow-tabs__steps-step-text">{{#if step_accessories_required}}{{{step_accessories_required}}}{{/if}}</p>
+            </div>
+        </div>
+        <!-- Step-Tracker Step Price Container -->
+        <div class="flow-tabs__steps-step-price">
+            <div class="flow-tabs__steps-step-container-price">
+                <!-- Step-Tracker Step Price Monthly Container -->
+                <div class="price"><p class="body-copy">Monthly</p>{{{tabs_summary_monthly_price}}}</div>
+                <!-- Step-Tracker Step Price One Time -->
+                <p class="body-copy">One Time</p>
+                <p class="tabs__steps-step-container-onetime">{{#if tabs_summary_onetime_price}}{{{tabs_summary_onetime_price}}}{{else}}$0.00{{/if}}</p>
+            </div>
+        </div>
+    </div>
+</div>
